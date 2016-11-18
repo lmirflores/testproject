@@ -22,6 +22,8 @@
 		8118EFDF1DDE4C2900CA14A0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118EFDE1DDE4C2900CA14A0 /* ExtensionDelegate.swift */; };
 		8118EFE11DDE4C2900CA14A0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118EFE01DDE4C2900CA14A0 /* NotificationController.swift */; };
 		8118EFE31DDE4C2900CA14A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8118EFE21DDE4C2900CA14A0 /* Assets.xcassets */; };
+		8118F1041DDE7DEF00CA14A0 /* File1.md in Sources */ = {isa = PBXBuildFile; fileRef = 8118F1031DDE7DEF00CA14A0 /* File1.md */; };
+		8118F1051DDE7DEF00CA14A0 /* File1.md in Sources */ = {isa = PBXBuildFile; fileRef = 8118F1031DDE7DEF00CA14A0 /* File1.md */; };
 		9D2465424E0619275794C2B9 /* Pods_testproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4719A3511F9A0478DAC27C /* Pods_testproject.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,7 @@
 		8118EFE01DDE4C2900CA14A0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		8118EFE21DDE4C2900CA14A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8118EFE41DDE4C2900CA14A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8118F1031DDE7DEF00CA14A0 /* File1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = File1.md; sourceTree = "<group>"; };
 		DA4719A3511F9A0478DAC27C /* Pods_testproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +157,7 @@
 		09A5D2D084E09ADA2F421B4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8118F1011DDE7DEF00CA14A0 /* testlibrary */,
 				DA4719A3511F9A0478DAC27C /* Pods_testproject.framework */,
 			);
 			name = Frameworks;
@@ -254,6 +258,23 @@
 				8118EFDB1DDE4C2900CA14A0 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8118F1011DDE7DEF00CA14A0 /* testlibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8118F1021DDE7DEF00CA14A0 /* libraryFiles */,
+			);
+			name = testlibrary;
+			path = testlibrary_common/testlibrary;
+			sourceTree = "<group>";
+		};
+		8118F1021DDE7DEF00CA14A0 /* libraryFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8118F1031DDE7DEF00CA14A0 /* File1.md */,
+			);
+			path = libraryFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,7 +521,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -512,6 +533,7 @@
 			files = (
 				8118EFA41DDE4C2900CA14A0 /* ViewController.swift in Sources */,
 				8118EFA21DDE4C2900CA14A0 /* AppDelegate.swift in Sources */,
+				8118F1041DDE7DEF00CA14A0 /* File1.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8118F1051DDE7DEF00CA14A0 /* File1.md in Sources */,
 				8118EFE11DDE4C2900CA14A0 /* NotificationController.swift in Sources */,
 				8118EFDF1DDE4C2900CA14A0 /* ExtensionDelegate.swift in Sources */,
 				8118EFDD1DDE4C2900CA14A0 /* InterfaceController.swift in Sources */,
@@ -860,6 +883,7 @@
 				8118EFE91DDE4C2900CA14A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8118EFEB1DDE4C2900CA14A0 /* Build configuration list for PBXNativeTarget "testproject WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -868,6 +892,7 @@
 				8118EFED1DDE4C2900CA14A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8118EFEF1DDE4C2900CA14A0 /* Build configuration list for PBXNativeTarget "testproject" */ = {
 			isa = XCConfigurationList;
@@ -876,6 +901,7 @@
 				8118EFF11DDE4C2900CA14A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8118EFF21DDE4C2900CA14A0 /* Build configuration list for PBXNativeTarget "testprojectTests" */ = {
 			isa = XCConfigurationList;
@@ -884,6 +910,7 @@
 				8118EFF41DDE4C2900CA14A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8118EFF51DDE4C2900CA14A0 /* Build configuration list for PBXNativeTarget "testprojectUITests" */ = {
 			isa = XCConfigurationList;
@@ -892,6 +919,7 @@
 				8118EFF71DDE4C2900CA14A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

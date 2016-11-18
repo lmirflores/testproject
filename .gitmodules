@@ -1,3 +1,5 @@
 [submodule "testproject/testlibrary_common"]
 	path = testproject/testlibrary_common
 	url = git@github.com:lmirflores/testlibraries.git
+	branch = master
+	fetchrecursesubmodules = true
